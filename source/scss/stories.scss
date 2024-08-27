@@ -1,0 +1,102 @@
+.stories {
+    margin-top: 140px;
+    @media screen and (max-width: 375px) {margin-top: 96px;}
+    &__header {
+        &__title {
+            max-width: 713px;
+            @media screen and (max-width: 375px) {letter-spacing: 0;}
+        }
+        margin-bottom: 64px;
+        @media screen and (max-width: 375px) {margin-bottom: 32px;}
+    }
+    &__blog {
+        margin: 0 -12px;
+        display: flex;
+        position: relative;
+    }
+    .slick {
+        &-list {
+            overflow: hidden;
+        }
+        &-track {
+            display: flex;
+        }
+        &-arrow {
+            position: absolute;
+            font-size: 0;
+            z-index: 10;
+            border: 1.5px solid #0A141F;
+            background-color: white;
+            border-radius: 100px;
+            width: 44px;
+            height: 44px;
+            cursor: pointer;
+            bottom: -76px;
+            &.slick-prev {
+                left: 124px;
+                &::after {
+                    content: '\27F5';
+                    color: #0A141F;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                @media screen and (max-width: 375px) {
+                    left: 110px;
+                }
+                @media screen and (max-width: 336px) {
+                    left: 100px;
+                }
+            }
+            &.slick-next {
+                right: 124px;
+                &::after {
+                    content: '\27F6';
+                    color: #0A141F;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                @media screen and (max-width: 375px) {
+                    right: 110px;
+                }
+                @media screen and (max-width: 336px) {
+                    right: 100px;
+                }
+            }
+            &.slick-disabled {
+                opacity: .3;
+            }
+        }
+    }
+}
+
+.story {
+    width: 397px;
+    margin: 0 12px;
+    &__img {
+        border-radius: 16px;
+        margin-bottom: 28px;
+        width: 100%;
+        height: 226px;
+        @media screen and (max-width: 375px) {margin-bottom: 20px;}
+    }
+    &__title {
+        line-height: 26.63px;
+        margin-bottom: 16px;
+        @media screen and (max-width: 375px) {
+            font-size: 18px;
+            line-height: 21.78px;
+            margin-bottom: 11px;
+        }
+    }
+    &__descr {
+        color: #000000DE;
+        font-size: 16px;
+        line-height: 22.4px;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+        margin: 0;
+    }
+}

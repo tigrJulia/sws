@@ -1,0 +1,193 @@
+.registration .row {
+  display: flex;
+  box-shadow: 0px 20px 18.2px 0px rgba(195, 200, 207, 0.0352941176);
+  box-shadow: 0px 100px 112px 0px rgba(195, 200, 207, 0.0705882353);
+  background-color: #EBEDEF;
+  border-radius: 16px;
+  margin: 64px 0 140px;
+}
+@media screen and (max-width: 1030px) {
+  .registration .row {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 624px) {
+  .registration .row {
+    margin: 140px 0 96px;
+  }
+}
+.registration__img {
+  width: 40%;
+  height: 100%;
+  padding: 17px 0 0 36px;
+}
+@media screen and (max-width: 1202px) {
+  .registration__img {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .registration__img {
+    width: 60%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 596px) {
+  .registration__img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.registration__info {
+  margin: 100px 0;
+  width: 60%;
+}
+@media screen and (max-width: 1202px) {
+  .registration__info {
+    margin: 100px 0 10px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .registration__info {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 48px auto 0;
+    padding: 0 16px;
+  }
+}
+.registration__info__title {
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 375px) {
+  .registration__info__title {
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+.registration__info__descr {
+  font-size: 18px;
+  line-height: 27px;
+  color: #042852;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 375px) {
+  .registration__info__descr {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+}
+
+.form__strings {
+  display: flex;
+  flex-direction: column;
+  margin: -12px 0;
+}
+@media screen and (max-width: 1202px) {
+  .form__strings {
+    margin: -6px 0;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .form__strings {
+    margin: -12px 0;
+  }
+}
+@media screen and (max-width: 732px) {
+  .form__strings {
+    margin: -6px 0;
+  }
+}
+.form__strings .string {
+  display: flex;
+  margin: 12px -12px;
+}
+@media screen and (max-width: 1202px) {
+  .form__strings .string {
+    flex-direction: column;
+    margin: 6px -12px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .form__strings .string {
+    flex-direction: row;
+    margin: 12px -12px;
+  }
+}
+@media screen and (max-width: 732px) {
+  .form__strings .string {
+    flex-direction: column;
+    margin: 6px -12px;
+  }
+}
+.form__strings .string .part {
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px;
+}
+@media screen and (max-width: 1202px) {
+  .form__strings .string .part {
+    margin: 6px 12px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .form__strings .string .part {
+    margin: 0 12px;
+  }
+}
+@media screen and (max-width: 732px) {
+  .form__strings .string .part {
+    margin: 6px 12px;
+  }
+}
+.form__strings .string__label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #042852;
+  margin: 0 0 6px;
+}
+.form__strings .string__input {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  color: #042852;
+  background-color: white;
+  border: 1px solid white;
+  width: 320px;
+  padding: 16px;
+  border-radius: 100px;
+  transition: border 0.3s;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.form__strings .string__input:hover {
+  border: 1px solid #042852;
+  transition: border 0.3s;
+}
+@media screen and (max-width: 596px) {
+  .form__strings .string__input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 456px) {
+  .form__strings .string__input {
+    padding: 11px 16px;
+  }
+}
+.form__strings .string__lower {
+  font-size: 12px;
+  line-height: 18px;
+  color: #484D53;
+  margin: 6px 0 0;
+}
+.form__btn {
+  margin-top: 8px;
+}
+@media screen and (max-width: 1202px) {
+  .form__btn {
+    margin: 16px 0 0;
+  }
+}

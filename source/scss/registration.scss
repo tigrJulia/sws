@@ -1,0 +1,126 @@
+.registration {
+    .row {
+        display: flex;
+        box-shadow: 0px 20px 18.2px 0px #C3C8CF09;
+        box-shadow: 0px 100px 112px 0px #C3C8CF12;
+        background-color: #EBEDEF;
+        border-radius: 16px;
+        margin: 64px 0 140px;
+        @media screen and (max-width: 1030px) {flex-direction: column-reverse;}
+        @media screen and (max-width: 624px) {margin: 140px 0 96px;}
+    }
+    &__img {
+        width: 40%;
+        height: 100%;
+        padding: 17px 0 0 36px;
+        @media screen and (max-width: 1202px) {
+            width: 50%; 
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 1000px) {width: 60%; padding: 0;}
+        @media screen and (max-width: 596px) {width: 100%; margin: 0;}
+    }
+    &__info {
+        margin: 100px 0 ;
+        width: 60%;
+        @media screen and (max-width: 1202px) {
+            margin: 100px 0 10px;
+            width: 50%;
+        }
+        @media screen and (max-width: 1030px) {
+            width: fit-content;
+            margin: 48px auto 0;
+            padding: 0 16px;
+        }
+        &__title {
+            margin-bottom: 16px;
+            @media screen and (max-width: 375px) {
+                font-weight: 600;
+                letter-spacing: 0;
+            }
+        }
+        &__descr {
+            font-size: 18px;
+            line-height: 27px;
+            color: #042852;
+            margin-bottom: 32px;
+            @media screen and (max-width: 375px) {
+                font-size: 16px;
+                line-height: 20.8px;
+            }
+        }
+    }
+}
+.form {
+    &__strings {
+        display: flex;
+        flex-direction: column;
+        margin: -12px 0;
+        @media screen and (max-width: 1202px) {margin: -6px 0;}
+        @media screen and (max-width: 1030px) {margin: -12px 0;}
+        @media screen and (max-width: 732px) {margin: -6px 0;}
+        .string {
+            display: flex;
+            margin: 12px -12px;
+            @media screen and (max-width: 1202px) {
+                flex-direction: column;
+                margin: 6px -12px;
+            }
+            @media screen and (max-width: 1030px) {
+                flex-direction: row;
+                margin: 12px -12px;
+            }
+            @media screen and (max-width: 732px) {
+                flex-direction: column;
+                margin: 6px -12px;
+            }
+            .part {
+                display: flex;
+                flex-direction: column;
+                margin: 0 12px;
+                @media screen and (max-width: 1202px) {margin: 6px 12px;}
+                @media screen and (max-width: 1030px) {margin: 0 12px;}
+                @media screen and (max-width: 732px) {margin: 6px 12px;}
+            }
+            &__label {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #042852;
+                margin: 0 0 6px;
+            }
+            &__input {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22.4px;
+                color: #042852;
+                background-color: white;
+                border: 1px solid white;
+                width: 320px;
+                padding: 16px;
+                border-radius: 100px;
+                transition: border .3s;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                &:hover {
+                    border: 1px solid #042852;
+                    transition: border .3s;
+                }
+                @media screen and (max-width: 596px) {width: 100%;}
+                @media screen and (max-width: 456px) {padding: 11px 16px;}
+            }
+            &__lower {
+                font-size: 12px;
+                line-height: 18px;
+                color: #484D53;
+                margin: 6px 0 0;
+
+            }
+        }
+    }
+    &__btn {
+        margin-top: 8px;
+        @media screen and (max-width: 1202px) {margin: 16px 0 0;}
+    }
+}
